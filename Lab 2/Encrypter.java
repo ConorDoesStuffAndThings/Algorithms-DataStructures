@@ -63,17 +63,22 @@ public class Encrypter {
         return decryptText;
     }
 
-    /*public static String encryptSimpleStringSubstitution(String plaintext, String mapping){
-        String mapping = "RAH";
-        String chipertext =
-        return null;
-    }*/
+    public static String encryptSimpleSubstitution(String plaintext, String mapping){
+        String textNoSpaces="";
+        String ciphertext = "";
 
-    public static void someMethod(int pos, int currentSize, String[] stringArray){
-        for(int i = pos+1; i<currentSize-1; i++){
-            stringArray[i-1]=stringArray[i];
+        for(int i = 0; i < plaintext.length(); i++){
+            if(Character.isLetter(plaintext.charAt(i))){
+                textNoSpaces+=plaintext.charAt(i);
+            }
         }
-        currentSize--;
 
+        for(int i = 0; i < textNoSpaces.length(); i++){
+            char ch = textNoSpaces.charAt(i);
+            int index = ch - 'A';
+            ciphertext+=mapping.charAt(index);
+        }
+
+        return ciphertext;
     }
 }
