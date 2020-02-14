@@ -13,19 +13,14 @@ public class RecursionMethods {
     }
 
     //Question 3
-    public String reverse(String str){
+    public static String reverse(String str){
         if (str.length()==0){
             return str;
         }
 
         else{
-            String firstChar = str.substring(0,1);
-
-            int restOfStringLength = str.length()-1;
-
-            //String result = reverse();
-
-            return firstChar;
+            String reversedString = reverse(str.substring(1)) + str.charAt(0);
+            return reversedString;
         }
     }
 }
