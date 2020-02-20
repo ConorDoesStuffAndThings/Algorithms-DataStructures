@@ -22,6 +22,7 @@ public class TestMyArrays {
 
         int testInt[] = {5,7,8,9,1,12};
 
+        //create random number generator to fill array and use current time method twice to get time in ms before and after sort and subtract
         //Intel(R) Core(TM) i7-6700 CPU @3.40GHz 3.41GHz
         MyArrays.selectionSort(testInt);// ms
 
