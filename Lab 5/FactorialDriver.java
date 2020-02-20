@@ -6,9 +6,9 @@ public class FactorialDriver {
         double power = RecursionMethods.myPow(2, 2);
         String reverseString = RecursionMethods.reverse("super dupper");
         int arrayNumber[] = {4, 5 , 5};
-        int sumOfArrayValues = MyArrays.sum(arrayNumber);
+        //int sumOfArrayValues = MyArrays.sum(arrayNumber);
 
-        JOptionPane.showMessageDialog(null, sumOfArrayValues);
+        JOptionPane.showMessageDialog(null, fact);
     }
 
 }

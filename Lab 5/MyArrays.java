@@ -1,4 +1,5 @@
-public class MyArrays {
+/*public class MyArrays {
+
     public static int sum(int[] values){
         if(values.length < 0){
             return 1;
@@ -9,4 +10,4 @@ public class MyArrays {
             return finalSum;
         }
     }
-}
+}*/
